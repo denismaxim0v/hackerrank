@@ -1,11 +1,11 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"sort"
 	"strings"
-  "os"
-  "bufio"
 )
 
 func grid_order(grid [][]string) [][]string {
@@ -31,12 +31,12 @@ func grid_checker(grid [][]string) bool {
 
 func main() {
 	var T int
-  var N int
-  var buffer string
-  io := bufio.NewReader(os.Stdin)
-  fmt.Fscan(io, &T)
-  fmt.Fscan(io, &N)
-  fmt.Fscan(io, &buffer)
+	var N int
+	var buffer string
+	io := bufio.NewReader(os.Stdin)
+	fmt.Fscan(io, &T)
+	fmt.Fscan(io, &N)
+	fmt.Fscan(io, &buffer)
 	for k := 0; k < T; k++ {
 		var N int
 		G := make([][]string, N)
